@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <!--removeIf(production)-->
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <!-- endbower -->
+    <!--endRemoveIf(production)-->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/styles/app.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <ui-navigation></ui-navigation>
+    <div>
+        <div class="container">
+            <div ng-view></div>
+        </div>
+    </div>
+    <!--removeIf(production)-->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <!-- endbower -->
+    <!--endRemoveIf(production)-->
+
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/services/movie-service.js"></script>
+    <script src="/app/services/shopping-service.js"></script>
+    <script src="/app/utils/constants.js"></script>
+    <script src="/app/directives/navigation/navigation-controller.js"></script>
+    <script src="/app/directives/navigation/ui-navigation.js"></script>
+    <script src="/app/views/main/mainController.js"></script>
+    <script src="/app/views/movie/movieController.js"></script>
+    <!-- endinject -->
+
+</body>
+
+</html>

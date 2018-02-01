@@ -1,0 +1,32 @@
+<div class="jumbotron">
+    <div class="form-group row">
+        <label class="col-sm-2">Id: </label>
+        <div class="col-sm-10">
+            <input type="text" ng-readonly="true" ng-model="vm.movie.id" class="form-control" aria-describedby="nameHelp" placeholder="Enter name">
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2">Title: </label>
+        <div class="col-sm-10">
+            <input type="text" ng-readonly="true" ng-model="vm.movie.title" class="form-control" aria-describedby="nameValue">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2">Poster: </label>
+        <div class="col-sm-10">
+            <img src="{{vm.movie.poster}}" style="width:80px; margin-right:5px;" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2">Sessions: </label>
+        <div class="col-sm-10">
+            <ul ng-repeat="session in vm.movie.sessions">
+                <li>{{session}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="#!/">Voltar</a>
+
+</div>
